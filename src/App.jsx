@@ -47,7 +47,7 @@ function App() {
         <input
           type="text"
           className="py-[10px] px-[20px] bg-[gray]  text-[white] rounded-[20px]"
-          placeholder="fa"
+          placeholder="Familiyasi"
           onChange={getFamiliyaValue}
           // value={familiyaValue}
    

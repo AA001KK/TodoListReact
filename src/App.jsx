@@ -21,7 +21,7 @@ function App() {
   // const [names, setNames] = useState([])
   // const [familiyaslar, setFamiliyalar] = useState([])
   // const [mansablar, setMansablar] = useState([])
-
+  
   const [list, setList] = useState([]);
   const add = () => {
     setList([...list, { name, familiya, manba }]);
@@ -29,6 +29,7 @@ function App() {
     // setFamiliyalar([...familiyaslar,familiya])
     // setMansablar([...mansablar,manba])
     // console.log(mansablar);
+
     console.log(list);
   };
   return (
@@ -46,8 +47,11 @@ function App() {
         <input
           type="text"
           className="py-[10px] px-[20px] bg-[gray]  text-[white] rounded-[20px]"
-          placeholder="Familiyasi"
+          placeholder="fa"
           onChange={getFamiliyaValue}
+          // value={familiyaValue}
+   
+          
         />
         <input
           type="text"
@@ -63,6 +67,9 @@ function App() {
         </button>
       </div>
       <table className="my-[50px] py-[10px]  block  px-[20px] bg-[#31363F] rounded-[20px] w-full">
+        <tr className="text-center  flex  justify-center text-[18px] uppercase block text-[white]">
+          <td>Kompaniyadagi Ishchilarning ro'xyati</td>
+        </tr>
         {list.map((value, ind) => {
           return (
             <tr

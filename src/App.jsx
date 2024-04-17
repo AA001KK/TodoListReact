@@ -54,7 +54,6 @@ function App() {
           className="py-[10px] px-[20px] bg-[gray]  text-[white] rounded-[20px]"
           placeholder="Mansabi"
           onChange={getManbaValue}
-          
         />
         <button
           onClick={add}
@@ -64,24 +63,23 @@ function App() {
         </button>
       </div>
       <table className="my-[50px] py-[10px]  block  px-[20px] bg-[#31363F] rounded-[20px] w-full">
-        
         {list.map((value, ind) => {
-        return(
-           <tr
-            key={ind}
-            className="my-[10px] block border-4 border-solid border-[#FEFAF6] flex justify-between"
-          >
-            <td className="text-center w-[30%] py-[5px]  px-[10px] bg-[#DAC0A3]  text-[#102C57] uppercase">
-              {value.name}
-            </td>
-            <td className="text-center w-[30%] py-[5px]  px-[10px] bg-[#DAC0A3] text-[#102C57] uppercase">
-              {value.familiya}
-            </td>
-            <td className="text-center w-[30%] py-[5px]  px-[10px] bg-[#DAC0A3] text-[#102C57] uppercase">
-              {value.manba}
-            </td>
-          </tr>
-        ) 
+          return (
+            <tr
+              key={ind}
+              className="my-[10px] block border-4 border-solid border-[#FEFAF6] flex justify-between"
+            >
+              <td className="text-center w-[30%] py-[5px]  px-[10px] bg-[#DAC0A3]  text-[#102C57] uppercase">
+                {value.name}
+              </td>
+              <td className="text-center w-[30%] py-[5px]  px-[10px] bg-[#DAC0A3] text-[#102C57] uppercase">
+                {value.familiya}
+              </td>
+              <td className="text-center w-[30%] py-[5px]  px-[10px] bg-[#DAC0A3] text-[#102C57] uppercase">
+                {value.manba}
+              </td>
+            </tr>
+          );
         })}
       </table>
     </div>

@@ -46,7 +46,7 @@ function App() {
         />
         <input
           type="text"
-          className="py-[10px] px-[20px] bg-[gray]  text-[white] rounded-[20px]"
+          className="py-[10px] px-[20px] bg-[gray]  focus:bg-[#76ABAE] text-[white] rounded-[20px]"
           placeholder="Familiyasi"
           onChange={getFamiliyaValue}
           // value={familiyaValue}
@@ -55,7 +55,7 @@ function App() {
         />
         <input
           type="text"
-          className="py-[10px] px-[20px] bg-[gray]  text-[white] rounded-[20px]"
+          className="py-[10px] px-[20px] bg-[gray] focus:bg-[#76ABAE]  text-[white] rounded-[20px]"
           placeholder="Mansabi"
           onChange={getManbaValue}
         />
